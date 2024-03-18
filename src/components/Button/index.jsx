@@ -2,9 +2,11 @@ import classes from './styles.module.css'
 
 function Button() {
 
+    const handleClick = () => console.log('Clicked!!!')
+
     return (
         <div>
-            <button className={classes.button}>Button</button>
+            <button onClick={handleClick} className={classes.button}>Button</button>
         </div>
     )
 }
