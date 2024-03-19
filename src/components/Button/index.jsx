@@ -4,9 +4,9 @@ function Button(props) {
 
     const handleClick = () => {
         // eslint-disable-next-line react/prop-types
-        const {counter, setCounter} = props;
+        const {setCounter} = props;
 
-        setCounter(counter + 1);
+        setCounter(c => c + 1);
     }
 
     return (
