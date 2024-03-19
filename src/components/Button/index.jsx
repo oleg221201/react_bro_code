@@ -1,8 +1,13 @@
 import classes from './styles.module.css'
 
-function Button() {
+function Button(props) {
 
-    const handleClick = () => console.log('Clicked!!!')
+    const handleClick = () => {
+        // eslint-disable-next-line react/prop-types
+        const {counter, setCounter} = props;
+
+        setCounter(counter + 1);
+    }
 
     return (
         <div>
